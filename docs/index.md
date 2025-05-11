@@ -10,9 +10,10 @@ hero:
     - theme: brand
       text: Get Started
       link: /guide/
+      
     - theme: alt
-      text: API Reference
-      link: /api-examples/
+      text: Configuration
+      link: /configuratio/
 
 features:
 
@@ -31,6 +32,6 @@ features:
   - icon: ⚙️
     title: Fully Customizable
     details: Fine-tune everything from command prefixes to admin rights, filters, and logging.
-    link: /guide/configuration
+    link: /configuration/
     linkText: Configure now
 ---
