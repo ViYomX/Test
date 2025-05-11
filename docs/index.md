@@ -32,5 +32,4 @@ features:
     details: Fine-tune everything from command prefixes to admin rights, filters, and logging.
     link: /guide/configuration
    linkText: Configure now
-
 ---
