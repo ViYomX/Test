@@ -9,8 +9,14 @@ export default defineConfig({
   cleanUrls: true,
   metaChunk: true,
   editLink: {
-      pattern: 'https://github.com/ViYomX/test/edit/main/docs/:path'
-    },
+    pattern: 'https://github.com/ViYomX/test/edit/main/docs/:path'
+    text: 'Edit this page on GitHub'
+  },
+
+  footer: {
+    message: 'Released under the MIT License.',
+    copyright: 'Copyright © 2024–2025, TheTeamVivek'
+  },
   transformPageData(pageData) {
     const siteUrl = 'https://viyomx.github.io/test/'
     const canonicalUrl = `${siteUrl}${pageData.relativePath}`
