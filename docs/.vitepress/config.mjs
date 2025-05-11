@@ -6,7 +6,7 @@ export default defineConfig({
   title: "YukkiMusic",
   description: "YukkiMusic is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.",
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/html_favicon.svg' }]
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: 'html_favicon.svg' }]
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
