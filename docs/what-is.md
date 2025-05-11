@@ -45,11 +45,9 @@ Together, we can make
 - **[Pranav-Saraswat](https://github.com/Pranav-Saraswat)**  
   For forking and reviving the project as **YukkiMusicFork**, making the bot functional again.  
 
-```{note}
-:collapsible: closed
-
+::: info
 YukkiMusicFork has since been deleted by Pranav.
-```
+:::
 
 ## ✨ About This Project
 
