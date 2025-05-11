@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/test/",
-  title: "YukkiMusic",
+  title: "",
   description: "YukkiMusic is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.",
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/html-favicon.svg' }]
