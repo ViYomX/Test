@@ -1,40 +1,40 @@
-name: Format Codes
+name: Deploy
 
 on:
   push:
+    branches:
+      - main
     paths:
-      - "**.py"
-      - "**.yml"
+      - 'docs/**'
+      - '.github/workflows/**'
   workflow_dispatch:
 
 jobs:
-  Format_Code:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Setup Python Environment
-        uses: actions/setup-python@v5
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: "3.10.x"
+          node-version: 18
 
-      - name: Install Formatting Tools
+      - name: Install Dependencies
         run: |
-             pip install --upgrade pip
-             pip install autoflake isort black pyupgrade pylint
+          npm install
 
-      - name: Commit Changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Format Codes"
-          commit_options: "--no-verify"
-          repository: .
-          commit_user_name: "github-actions[bot]"
-          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
-          commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+      - name: Build VitePress Site
+        run: |
+          npm run docs:build
 
-      - uses: Mattraks/delete-workflow-runs@v2
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          delete_workflow_pattern: "Format Codes"
-          keep_minimum_runs: 0
-          retain_days: 0
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
+          publish_branch: gh-pages
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
