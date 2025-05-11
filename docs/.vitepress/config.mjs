@@ -8,6 +8,9 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
+  editLink: {
+      pattern: 'https://github.com/ViYomX/test/edit/main/docs/:path'
+    },
   transformPageData(pageData) {
     const siteUrl = 'https://viyomx.github.io/test/'
     const canonicalUrl = `${siteUrl}${pageData.relativePath}`
