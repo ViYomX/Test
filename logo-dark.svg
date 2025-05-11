@@ -1,7 +1,7 @@
 <svg width="215" height="40" viewBox="0 0 215.62 40" xmlns="http://www.w3.org/2000/svg">
-  <title>Yukki Music Logo (Dark)</title>
-  <text x="0" y="30" font-size="30" font-family="Arial" fill="#FF9800">🎵</text>
-  <text x="35" y="30" font-size="30" font-family="Arial" fill="#00FFF0">Yukki</text>
-  <text x="110" y="30" font-size="30" font-family="Arial" fill="#FF9800">Music</text>
-  <text x="192" y="30" font-size="30" font-family="Arial" fill="#FFFFFF">🎶</text>
+  <title>YukkiMusic Logo</title>
+  <text x="0" y="30" font-size="30" font-family="Arial" font-weight="bold" fill="#FF9800">🎵</text>
+  <text x="35" y="30" font-size="30" font-family="Arial" font-weight="bold" fill="#00FFF0">Yukki</text>
+  <text x="110" y="30" font-size="30" font-family="Arial" font-weight="bold" fill="#FF9800">Music</text>
+  <text x="192" y="30" font-size="30" font-family="Arial" font-weight="bold" fill="#FFFFFF">🎶</text>
 </svg>
