@@ -1,25 +1,36 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "YukkiMusic"
-  text: "YukkiMusic is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources."
-  tagline: My great project tagline
+  name: YukkiMusic
+  text: "Powerful Telegram Music + Video Bot powered by Pyrogram and Py-Tgcalls."
+  tagline: "Stream music, videos, and live content directly into Telegram group calls from YouTube, Spotify, and more."
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Get Started
+      link: /guide/
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: API Reference
+      link: /api-examples/
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
----
 
+  - icon: 🎵
+    title: High-Quality Streaming
+    details: Enjoy smooth, high-bitrate audio and video streaming using Py-Tgcalls integration.
+    link: /guide/features/streaming
+    linkText: Learn more
+
+  - icon: 🌐
+    title: Multi-Source Support
+    details: Supports YouTube, Spotify, Apple Music, and direct file links — all in one bot.
+    link: /guide/features/sources
+    linkText: Explore sources
+
+  - icon: ⚙️
+    title: Fully Customizable
+    details: Fine-tune everything from command prefixes to admin rights, filters, and logging.
+    link: /guide/configuration
+   linkText: Configure now
+
+---
