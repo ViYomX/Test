@@ -8,6 +8,18 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
+  transformPageData(pageData) {
+    const siteUrl = 'https://viyomx.github.io/test/'
+    const canonicalUrl = `${siteUrl}${pageData.relativePath}`
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '.html')
+
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push([
+      'link',
+      { rel: 'canonical', href: canonicalUrl }
+    ])
+  },
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: 'html_favicon.svg' }],
     ['meta', { property: 'og:type', content: 'website' }],
