@@ -1,7 +1,7 @@
 <svg width="280" height="40" viewBox="0 0 300 40" xmlns="http://www.w3.org/2000/svg">
   <title>YukkiMusic</title>
   <text x="0" y="32" font-size="37" font-family="Arial" font-weight="bold" fill="#F57C00">🎵</text>
-  <text x="50" y="30" font-size="37" font-family="Arial" font-weight="bold" fill="#00FFD1">Yukki</text>
-  <text x="155" y="30" font-size="37" font-family="Arial" font-weight="bold" fill="#F57C00">Music</text>
+  <text x="47" y="30" font-size="37" font-family="Arial" font-weight="bold" fill="#00FFD1">Yukki</text>
+  <text x="148" y="30" font-size="37" font-family="Arial" font-weight="bold" fill="#F57C00">Music</text>
   <text x="255" y="30" font-size="37" font-family="Arial" font-weight="bold" fill="#656565">🎶</text>
 </svg>
