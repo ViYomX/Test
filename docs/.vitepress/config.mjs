@@ -14,7 +14,7 @@ export default defineConfig({
     logo: {
       light: '/logo-light.svg',
       dark: '/logo-dark.svg',
-      alt: 'Yukki Music Logo',
+      alt: 'YukkiMusic Logo',
     },
     nav: [
       { text: 'Home', link: '/' },
