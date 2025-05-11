@@ -5,8 +5,26 @@ export default defineConfig({
   base: "/test/",
   title: "YukkiMusic",
   description: "YukkiMusic is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.",
+  lastUpdated: true,
+  cleanUrls: true,
+  metaChunk: true,
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: 'html_favicon.svg' }]
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: 'html_favicon.svg' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'YukkiMusic' }],
+    ['meta', { property: 'og:url', content: 'https://TheTeamVivek.github.io' }],
+    [
+      'link',
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
+    ],
+    [
+      'link',
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
+    ],
+    [
+      'link',
+      { href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', rel: 'stylesheet' }
+    ]
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
