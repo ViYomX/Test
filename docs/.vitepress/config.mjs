@@ -8,15 +8,6 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
-  editLink: {
-    pattern: 'https://github.com/ViYomX/test/edit/main/docs/:path',
-    text: 'Edit this page on GitHub'
-  },
-
-  footer: {
-    message: 'Released under the MIT License.',
-    copyright: 'Copyright © 2024–2025, TheTeamVivek'
-  },
   transformPageData(pageData) {
     const siteUrl = 'https://viyomx.github.io/test/'
     const canonicalUrl = `${siteUrl}${pageData.relativePath}`
@@ -54,6 +45,15 @@ export default defineConfig({
       light: '/logo-light.svg',
       dark: '/logo-dark.svg',
       alt: 'YukkiMusic Logo',
+    },
+    editLink: {
+      pattern: 'https://github.com/ViYomX/test/edit/main/docs/:path',
+      text: 'Edit this page on GitHub'
+    },
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2024–2025, TheTeamVivek'
     },
     nav: [
       { text: 'Home', link: '/' },
