@@ -25,18 +25,6 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'YukkiMusic' }],
     ['meta', { property: 'og:url', content: 'https://TheTeamVivek.github.io' }],
-    [
-      'link',
-      { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
-    ],
-    [
-      'link',
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
-    ],
-    [
-      'link',
-      { href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', rel: 'stylesheet' }
-    ]
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -64,7 +52,7 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Configuration', link: '/guide/configuration' }
     ],
 
     sidebar: [
