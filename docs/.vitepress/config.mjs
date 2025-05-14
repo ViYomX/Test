@@ -46,6 +46,13 @@ export default defineConfig({
       dark: '/logo-dark.svg',
       alt: 'YukkiMusic Logo',
     },
+    lastUpdated: {
+      text: 'Last Updated On',
+      formatOptions: {
+        dateStyle: 'long',
+        timeStyle: 'short',
+      }
+    }
     editLink: {
       pattern: 'https://github.com/ViYomX/test/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
