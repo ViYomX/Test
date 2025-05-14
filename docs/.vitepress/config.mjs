@@ -40,7 +40,7 @@ export default defineConfig({
         dateStyle: 'long',
         timeStyle: 'short',
       }
-    }
+    },
     editLink: {
       pattern: 'https://github.com/ViYomX/test/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
